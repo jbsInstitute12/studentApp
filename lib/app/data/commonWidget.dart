@@ -10,7 +10,10 @@ class commonWidget {
       title: Text(
         title ?? "ghvfh",
         style: style ??
-            TextStyle(color: Colors.white, fontFamily: FontFamily.popins),
+            TextStyle(
+                color: Colors.white,
+                fontFamily: FontFamily.popins,
+                fontWeight: FontWeight.w700),
       ),
     );
   }

@@ -75,6 +75,7 @@ class SigninView extends GetView<SigninController> {
                   fillColor: AppColors.geryColor),
             ),
           ),
+          
           SizedBox(
             height: 3.h,
           ),

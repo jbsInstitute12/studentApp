@@ -8,6 +8,7 @@ import 'package:studentapp/app/data/appIcons.dart';
 import 'package:studentapp/app/data/commonWidget.dart';
 import 'package:studentapp/app/data/fontFamily.dart';
 import 'package:studentapp/app/modules/dashboard/views/drawer_view.dart';
+import 'package:studentapp/app/routes/app_pages.dart';
 
 import '../controllers/dashboard_controller.dart';
 
@@ -42,6 +43,24 @@ class DashboardView extends GetView<DashboardController> {
               fontSize: 15.sp,
               fontWeight: FontWeight.w700),
         ),
+        actions: [
+          InkWell(
+            onTap: () {
+              Get.toNamed(Routes.NOTIFICATION);
+            },
+            child: Icon(
+              Icons.notifications,
+              color: Colors.white,
+            ),
+          ),
+          SizedBox(
+            width: 3.w,
+          ),
+          InkWell(onTap: () {}, child: Icon(Icons.more_vert)),
+          SizedBox(
+            width: 3.w,
+          ),
+        ],
       ),
       body: Scaffold(
         extendBody: true,
