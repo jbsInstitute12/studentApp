@@ -59,6 +59,7 @@ class DashboardView extends GetView<DashboardController> {
             leftCornerRadius: 32,
             rightCornerRadius: 32,
             itemCount: controller.screens.length,
+
             // gapLocation: GapLocation.center,
             // notchSmoothness: NotchSmoothness.verySmoothEdge,
             // leftCornerRadius: 32,
@@ -72,8 +73,19 @@ class DashboardView extends GetView<DashboardController> {
                   children: [
                     Icon(
                       controller.bottomIcons[index],
+                      color: isActive
+                          ? AppColors.redColor
+                          : AppColors.blackTextColor,
                     ),
-                    Text(controller.names[index])
+                    Text(
+                      controller.names[index],
+                      style: TextStyle(
+                          color: isActive
+                              ? AppColors.redColor
+                              : AppColors.blackTextColor,
+                          fontWeight: FontWeight.w700,
+                          fontFamily: FontFamily.popins),
+                    )
                   ],
                 ),
               );

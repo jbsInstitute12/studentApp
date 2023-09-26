@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import 'package:studentapp/app/data/appColors.dart';
+import 'package:studentapp/app/data/fontFamily.dart';
+import 'package:studentapp/app/modules/home/views/item_view.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -58,7 +60,7 @@ class HomeView extends GetView<HomeController> {
               Container(
                 constraints: BoxConstraints(
                     minHeight: 10.h,
-                    maxHeight: 80.h,
+                    // maxHeight: 80.h,
                     maxWidth: 100.w,
                     minWidth: 100.w),
                 child: GridView.builder(
@@ -69,19 +71,7 @@ class HomeView extends GetView<HomeController> {
                   itemBuilder: (context, index) {
                     int rand = Random()
                         .nextInt(AppColors.mainHomeScreenColors.length - 1);
-                    return Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Card(
-                        elevation: 5.sp,
-                        color: AppColors.mainHomeScreenColors[rand],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.sp),
-                        ),
-                        child: Column(
-                          children: [],
-                        ),
-                      ),
-                    );
+                    return ItemView(index: index, random: rand);
                   },
                   itemCount: controller.screensName.length,
                 ),
