@@ -85,7 +85,7 @@ class SigninView extends GetView<SigninController> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5.sp))),
               onPressed: () {
-                Get.off(DashboardView());
+                Get.offAll(() => DashboardView());
               },
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
