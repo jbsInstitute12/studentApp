@@ -1,13 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:studentapp/app/data/appIcons.dart';
+import 'package:studentapp/app/modules/Profile/views/profile_view.dart';
+import 'package:studentapp/app/modules/home/views/home_view.dart';
 
 class DashboardController extends GetxController {
   //TODO: Implement DashboardController
 
-  final _currentIndex = 0.obs;
+  final currentIndex = 0.obs;
 
-  RxList<Widget> screens = <Widget>[].obs;
-  get currentIndex => _currentIndex.value;
+  GlobalKey<ScaffoldState> scfkey = GlobalKey<ScaffoldState>();
+
+  List<IconData> bottomIcons = [AppIcons.icHome, AppIcons.icProfile];
+
+  RxList<String> names = ["Home", "Profile"].obs;
+
+  RxList<Widget> screens = <Widget>[HomeView(), ProfileView()].obs;
+
+  var drawerOpen = false.obs;
 
   @override
   void onInit() {

@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 import 'package:studentapp/app/data/appColors.dart';
 import 'package:studentapp/app/data/appStrings.dart';
+import 'package:studentapp/app/modules/dashboard/bindings/dashboard_binding.dart';
 import 'package:studentapp/app/modules/dashboard/views/dashboard_view.dart';
 import 'package:studentapp/gen/assets.gen.dart';
 
@@ -85,7 +86,7 @@ class SigninView extends GetView<SigninController> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5.sp))),
               onPressed: () {
-                Get.offAll(() => DashboardView());
+                Get.offAll(() => DashboardView(), binding: DashboardBinding());
               },
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
