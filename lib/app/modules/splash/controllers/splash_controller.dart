@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:studentapp/app/routes/app_pages.dart';
 
 class SplashController extends GetxController {
   //TODO: Implement SplashController
@@ -7,6 +8,10 @@ class SplashController extends GetxController {
   @override
   void onInit() {
     super.onInit();
+
+    Future.delayed(Duration(milliseconds: 100), () {
+      Get.toNamed(Routes.SIGNIN);
+    });
   }
 
   @override
