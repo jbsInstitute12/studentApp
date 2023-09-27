@@ -61,7 +61,7 @@ class AppPages {
       binding: DashboardBinding(),
     ),
     GetPage(
-<<<<<<< HEAD
+
       name: _Paths.FACILITY,
       page: () => const FacilityView(),
       binding: FacilityBinding(),
@@ -70,7 +70,7 @@ class AppPages {
       name: _Paths.NOTICE,
       page: () => const NoticeView(),
       binding: NoticeBinding(),
-=======
+
       name: _Paths.PROFILE,
       page: () => const ProfileView(),
       binding: ProfileBinding(),
@@ -94,7 +94,6 @@ class AppPages {
       name: _Paths.TODAYS,
       page: () => const TodaysView(),
       binding: TodaysBinding(),
->>>>>>> d9685aea88d506a7389eebe3191c3aabc43fac01
     ),
   ];
 }
