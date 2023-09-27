@@ -12,7 +12,6 @@ import 'package:studentapp/app/data/appColors.dart';
 import 'package:studentapp/app/data/fontFamily.dart';
 import 'package:studentapp/app/modules/home/views/item_view.dart';
 
-
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {

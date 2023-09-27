@@ -8,6 +8,11 @@ abstract class Routes {
   static const SIGNIN = _Paths.SIGNIN;
   static const SIGNUP = _Paths.SIGNUP;
   static const DASHBOARD = _Paths.DASHBOARD;
+  static const PROFILE = _Paths.PROFILE;
+  static const NOTIFICATION = _Paths.NOTIFICATION;
+  static const ATTANDANCE = _Paths.ATTANDANCE;
+  static const MANAGEMENT_MESSAGE = _Paths.MANAGEMENT_MESSAGE;
+  static const TODAYS = _Paths.TODAYS;
 }
 
 abstract class _Paths {
@@ -17,4 +22,9 @@ abstract class _Paths {
   static const SIGNIN = '/signin';
   static const SIGNUP = '/signup';
   static const DASHBOARD = '/dashboard';
+  static const PROFILE = '/profile';
+  static const NOTIFICATION = '/notification';
+  static const ATTANDANCE = '/attandance';
+  static const MANAGEMENT_MESSAGE = '/management-message';
+  static const TODAYS = '/todays';
 }
