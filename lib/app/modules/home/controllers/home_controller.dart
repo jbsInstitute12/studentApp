@@ -1,10 +1,12 @@
 import 'package:get/get.dart';
+import 'package:studentapp/app/data/appIcons.dart';
 import 'package:studentapp/app/data/appStrings.dart';
 
 class HomeController extends GetxController {
   //TODO: Implement HomeController
 
   RxList<String> screensName = <String>[
+    AppStrings.todays,
     AppStrings.aboutUse,
     AppStrings.activity,
     AppStrings.admission,
@@ -12,7 +14,7 @@ class HomeController extends GetxController {
     AppStrings.assignement,
     AppStrings.contactus,
     AppStrings.eLibrary,
-    AppStrings.eLibrary,
+    // AppStrings.eLibrary,
     AppStrings.events,
     AppStrings.facility,
     AppStrings.gallery,
@@ -20,6 +22,23 @@ class HomeController extends GetxController {
     AppStrings.notice,
     AppStrings.principalMessage
   ].obs;
+
+  List<dynamic> icons = [
+    AppIcons.icCalender,
+    AppIcons.icAboutus,
+    AppIcons.icActivity,
+    AppIcons.icAdmission,
+    AppIcons.icAdmissionInquiry,
+    AppIcons.icAssignment,
+    AppIcons.icContactUs,
+    AppIcons.icElibrary,
+    AppIcons.icEvents,
+    AppIcons.icFacility,
+    AppIcons.icGallery,
+    AppIcons.icManagementMessage,
+    AppIcons.icNotice,
+    AppIcons.icPrincipalMessage
+  ];
 
   // RxList<String>  = RxList.generate(10, (index) => "fghhghcg");
   final count = 0.obs;

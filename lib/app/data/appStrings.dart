@@ -16,5 +16,14 @@ class AppStrings {
   static const admission = "Admission";
   static const admissionInquiry = "Admission Inquiry";
   static const contactus = "Contact Us";
+  static const staff_details = "Staff Details";
+  static const todaysBday = "Today's BirthDay List";
+  static const syllabus = "syllabus";
+  static const career = "career";
+  static const parentinquiry = "Parents Inquiry";
+  static const schlResult = "School Result";
+  static const privacyPolicy = "Privacy Policy";
+
   // static const admission="todays";
+  static const wpPhoneNumber = "+91794443901";
 }

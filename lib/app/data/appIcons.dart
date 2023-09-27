@@ -19,5 +19,11 @@ class AppIcons {
   static IconData icAdmission = Icons.admin_panel_settings_rounded;
   static IconData icAdmissionInquiry = Icons.laptop;
   static IconData icContactUs = Icons.contact_mail_outlined;
+  static IconData icbirthday = Icons.cake;
+  static IconData icsyllabus = Icons.document_scanner;
+  static IconData icinquiry = Icons.question_mark_rounded;
+  static IconData icschlresult = Icons.margin;
+  static IconData icprivacypolicy = Icons.security;
+  // static IconData icsyllabus = Icons.document_scanner;
   // static IconData icAboutus = Icons.info;
 }

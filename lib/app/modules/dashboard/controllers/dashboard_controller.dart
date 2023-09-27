@@ -7,6 +7,8 @@ import 'package:studentapp/app/modules/home/views/home_view.dart';
 class DashboardController extends GetxController {
   //TODO: Implement DashboardController
 
+
+  RxBool tileExpanded=false.obs;
   final currentIndex = 0.obs;
 
   GlobalKey<ScaffoldState> scfkey = GlobalKey<ScaffoldState>();
@@ -17,6 +19,7 @@ class DashboardController extends GetxController {
 
   RxList<Widget> screens = <Widget>[HomeView(), ProfileView()].obs;
 
+  late OverlayEntry popUpDialog;
   var drawerOpen = false.obs;
 
   @override

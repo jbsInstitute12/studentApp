@@ -9,6 +9,19 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsGifGen {
+  const $AssetsGifGen();
+
+  /// File path: assets/gif/whatsapp.gif
+  AssetGenImage get whatsapp => const AssetGenImage('assets/gif/whatsapp.gif');
+
+  /// File path: assets/gif/youtube.gif
+  AssetGenImage get youtube => const AssetGenImage('assets/gif/youtube.gif');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [whatsapp, youtube];
+}
+
 class $AssetsIllustrationGen {
   const $AssetsIllustrationGen();
 
@@ -23,6 +36,7 @@ class $AssetsIllustrationGen {
 class Assets {
   Assets._();
 
+  static const $AssetsGifGen gif = $AssetsGifGen();
   static const $AssetsIllustrationGen illustration = $AssetsIllustrationGen();
 }
 

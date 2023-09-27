@@ -17,4 +17,18 @@ class commonWidget {
       ),
     );
   }
+
+  static getDrawerListTile({VoidCallback? callback, dynamic icon, required String title}) {
+    return ListTile(
+      onTap: () {
+        callback?.call();
+        // Get.toNamed(Routes.MANAGEMENT_MESSAGE);
+      },
+      shape: Border(bottom: BorderSide(width: 0.3, style: BorderStyle.solid)),
+      leading: Icon(icon),
+      title: Text(
+        title,
+      ),
+    );
+  }
 }

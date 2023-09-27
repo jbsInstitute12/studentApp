@@ -7,7 +7,10 @@ import 'package:studentapp/app/data/appColors.dart';
 import 'package:studentapp/app/data/appIcons.dart';
 import 'package:studentapp/app/data/commonWidget.dart';
 import 'package:studentapp/app/data/fontFamily.dart';
+import 'package:studentapp/app/modules/attandance/views/attandance_popup_view.dart';
+import 'package:studentapp/app/modules/attandance/views/attandance_view.dart';
 import 'package:studentapp/app/modules/dashboard/views/drawer_view.dart';
+import 'package:studentapp/app/modules/dashboard/views/pop_menu_view.dart';
 import 'package:studentapp/app/routes/app_pages.dart';
 
 import '../controllers/dashboard_controller.dart';
@@ -56,7 +59,8 @@ class DashboardView extends GetView<DashboardController> {
           SizedBox(
             width: 3.w,
           ),
-          InkWell(onTap: () {}, child: Icon(Icons.more_vert)),
+          PopMenuView(),
+          // InkWell(onTap: () {}, child: Icon(Icons.more_vert)),
           SizedBox(
             width: 3.w,
           ),
@@ -120,9 +124,20 @@ class DashboardView extends GetView<DashboardController> {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
           backgroundColor: AppColors.redColor,
-          child: Icon(
-            AppIcons.icCalender,
-            color: Colors.white,
+          child: GestureDetector(
+            onLongPress: () {
+              controller.popUpDialog = createPopUpDialog(context);
+
+              Overlay.of(context).insert(controller.popUpDialog);
+            },
+            onLongPressEnd: (details) {
+              controller.popUpDialog.remove();
+            },
+            onTap: () {},
+            child: Icon(
+              AppIcons.icCalender,
+              color: Colors.white,
+            ),
           ),
           onPressed: () {},
         ),
