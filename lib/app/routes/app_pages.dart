@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:studentapp/app/modules/notice/bindings/notice_binding.dart';
+import 'package:studentapp/app/modules/notice/views/notice_view.dart';
 
 import '../modules/Profile/bindings/profile_binding.dart';
 import '../modules/Profile/views/profile_view.dart';
@@ -61,7 +63,6 @@ class AppPages {
       binding: DashboardBinding(),
     ),
     GetPage(
-
       name: _Paths.FACILITY,
       page: () => const FacilityView(),
       binding: FacilityBinding(),
@@ -70,7 +71,8 @@ class AppPages {
       name: _Paths.NOTICE,
       page: () => const NoticeView(),
       binding: NoticeBinding(),
-
+    ),
+    GetPage(
       name: _Paths.PROFILE,
       page: () => const ProfileView(),
       binding: ProfileBinding(),

@@ -13,6 +13,8 @@ abstract class Routes {
   static const ATTANDANCE = _Paths.ATTANDANCE;
   static const MANAGEMENT_MESSAGE = _Paths.MANAGEMENT_MESSAGE;
   static const TODAYS = _Paths.TODAYS;
+  static const FACILITY = _Paths.FACILITY;
+  static const NOTICE = _Paths.FACILITY;
 }
 
 abstract class _Paths {
@@ -27,4 +29,6 @@ abstract class _Paths {
   static const ATTANDANCE = '/attandance';
   static const MANAGEMENT_MESSAGE = '/management_message';
   static const TODAYS = '/todays';
+  static const FACILITY = '/facility';
+  static const NOTICE = '/notice';
 }
