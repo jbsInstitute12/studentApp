@@ -14,7 +14,7 @@ abstract class Routes {
   static const MANAGEMENT_MESSAGE = _Paths.MANAGEMENT_MESSAGE;
   static const TODAYS = _Paths.TODAYS;
   static const FACILITY = _Paths.FACILITY;
-  static const NOTICE = _Paths.FACILITY;
+  static const NOTICE = _Paths.NOTICE;
 }
 
 abstract class _Paths {

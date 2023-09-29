@@ -172,7 +172,9 @@ class DrawerView extends GetView<DashboardController> {
                   ),
                   commonWidget.getDrawerListTile(
                       title: AppStrings.facility,
-                      callback: () {},
+                      callback: () {
+                        Get.toNamed(Routes.FACILITY);
+                      },
                       icon: AppIcons.icFacility),
                   SizedBox(
                     height: 1.h,

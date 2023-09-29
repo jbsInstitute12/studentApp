@@ -1,6 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:studentapp/app/data/appIcons.dart';
 import 'package:studentapp/app/data/appStrings.dart';
+import 'package:studentapp/app/routes/app_pages.dart';
 
 class HomeController extends GetxController {
   //TODO: Implement HomeController
@@ -21,6 +23,23 @@ class HomeController extends GetxController {
     AppStrings.managementMessage,
     AppStrings.notice,
     AppStrings.principalMessage
+  ].obs;
+  RxList<String> screensRouteName = <String>[
+    Routes.TODAYS,
+    Routes.TODAYS,
+    Routes.TODAYS,
+    Routes.TODAYS,
+    Routes.TODAYS,
+    Routes.TODAYS,
+    Routes.TODAYS,
+    Routes.TODAYS,
+    // Routes.eLibrary,
+    Routes.TODAYS,
+    Routes.FACILITY,
+    Routes.TODAYS,
+    Routes.MANAGEMENT_MESSAGE,
+    Routes.NOTICE,
+    Routes.NOTICE
   ].obs;
 
   List<dynamic> icons = [

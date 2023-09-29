@@ -71,7 +71,11 @@ class HomeView extends GetView<HomeController> {
                   itemBuilder: (context, index) {
                     int rand = Random()
                         .nextInt(AppColors.mainHomeScreenColors.length - 1);
-                    return ItemView(index: index, random: rand);
+                    return ItemView(
+                      index: index,
+                      random: rand,
+                      routeName: controller.screensRouteName[index],
+                    );
                   },
                   itemCount: controller.screensName.length,
                 ),
