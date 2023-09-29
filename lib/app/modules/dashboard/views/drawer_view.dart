@@ -151,7 +151,9 @@ class DrawerView extends GetView<DashboardController> {
                   ),
                   commonWidget.getDrawerListTile(
                       title: AppStrings.principalMessage,
-                      callback: () {},
+                      callback: () {
+                        Get.toNamed(Routes.MANAGEMENT_MESSAGE);
+                      },
                       icon: AppIcons.icPrincipalMessage),
                   SizedBox(
                     height: 1.h,

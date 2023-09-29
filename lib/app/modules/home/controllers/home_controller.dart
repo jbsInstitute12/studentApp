@@ -27,9 +27,9 @@ class HomeController extends GetxController {
   RxList<String> screensRouteName = <String>[
     Routes.TODAYS,
     Routes.TODAYS,
+    Routes.ACTIVITY,
     Routes.TODAYS,
-    Routes.TODAYS,
-    Routes.TODAYS,
+    Routes.ADMISSION_INQUIRY,
     Routes.TODAYS,
     Routes.TODAYS,
     Routes.TODAYS,
@@ -39,7 +39,7 @@ class HomeController extends GetxController {
     Routes.TODAYS,
     Routes.MANAGEMENT_MESSAGE,
     Routes.NOTICE,
-    Routes.NOTICE
+    Routes.MANAGEMENT_MESSAGE
   ].obs;
 
   List<dynamic> icons = [

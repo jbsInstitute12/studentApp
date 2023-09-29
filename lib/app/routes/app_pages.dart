@@ -1,9 +1,11 @@
 import 'package:get/get.dart';
-import 'package:studentapp/app/modules/notice/bindings/notice_binding.dart';
-import 'package:studentapp/app/modules/notice/views/notice_view.dart';
 
 import '../modules/Profile/bindings/profile_binding.dart';
 import '../modules/Profile/views/profile_view.dart';
+import '../modules/activity/bindings/activity_binding.dart';
+import '../modules/activity/views/activity_view.dart';
+import '../modules/admission_inquiry/bindings/admission_inquiry_binding.dart';
+import '../modules/admission_inquiry/views/admission_inquiry_view.dart';
 import '../modules/attandance/bindings/attandance_binding.dart';
 import '../modules/attandance/views/attandance_view.dart';
 import '../modules/dashboard/bindings/dashboard_binding.dart';
@@ -18,6 +20,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/managementMessage/bindings/management_message_binding.dart';
 import '../modules/managementMessage/views/management_message_view.dart';
+import '../modules/notice/bindings/notice_binding.dart';
+import '../modules/notice/views/notice_view.dart';
 import '../modules/notification/bindings/notification_binding.dart';
 import '../modules/notification/views/notification_view.dart';
 import '../modules/signin/bindings/signin_binding.dart';
@@ -96,6 +100,16 @@ class AppPages {
       name: _Paths.TODAYS,
       page: () => const TodaysView(),
       binding: TodaysBinding(),
+    ),
+    GetPage(
+      name: _Paths.ACTIVITY,
+      page: () => const ActivityView(),
+      binding: ActivityBinding(),
+    ),
+    GetPage(
+      name: _Paths.ADMISSION_INQUIRY,
+      page: () => const AdmissionInquiryView(),
+      binding: AdmissionInquiryBinding(),
     ),
   ];
 }

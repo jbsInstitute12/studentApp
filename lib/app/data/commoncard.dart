@@ -14,7 +14,9 @@ class CommonCard extends StatelessWidget {
   final Color color;
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return 
+    
+    InkWell(
       onTap: onPressed,
       child: Container(
         height: 10.h,
@@ -47,5 +49,6 @@ class CommonCard extends StatelessWidget {
         ),
       ),
     );
+  
   }
 }
