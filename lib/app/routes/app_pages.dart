@@ -6,6 +6,8 @@ import '../modules/attandance/bindings/attandance_binding.dart';
 import '../modules/attandance/views/attandance_view.dart';
 import '../modules/dashboard/bindings/dashboard_binding.dart';
 import '../modules/dashboard/views/dashboard_view.dart';
+import '../modules/events/bindings/events_binding.dart';
+import '../modules/events/views/events_view.dart';
 import '../modules/facility/bindings/facility_binding.dart';
 import '../modules/facility/views/facility_view.dart';
 import '../modules/facility/views/facility_view.dart';
@@ -16,6 +18,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/managementMessage/bindings/management_message_binding.dart';
 import '../modules/managementMessage/views/management_message_view.dart';
+import '../modules/notice/bindings/notice_binding.dart';
+import '../modules/notice/views/notice_view.dart';
 import '../modules/notification/bindings/notification_binding.dart';
 import '../modules/notification/views/notification_view.dart';
 import '../modules/signin/bindings/signin_binding.dart';
@@ -32,7 +36,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.FACILITY;
+  static const INITIAL = Routes.EVENTS;
 
   static final routes = [
     GetPage(
@@ -60,17 +64,17 @@ class AppPages {
       page: () => const DashboardView(),
       binding: DashboardBinding(),
     ),
+    // GetPage(
+    //   name: _Paths.FACILITY,
+    //   page: () => const FacilityView(),
+    //   binding: FacilityBinding(),
+    // ),
+    // GetPage(
+    //   name: _Paths.NOTICE,
+    //   page: () => const NoticeView(),
+    //   binding: NoticeBinding(),
+    // ),
     GetPage(
-
-      name: _Paths.FACILITY,
-      page: () => const FacilityView(),
-      binding: FacilityBinding(),
-    ),
-    GetPage(
-      name: _Paths.NOTICE,
-      page: () => const NoticeView(),
-      binding: NoticeBinding(),
-
       name: _Paths.PROFILE,
       page: () => const ProfileView(),
       binding: ProfileBinding(),
@@ -94,6 +98,11 @@ class AppPages {
       name: _Paths.TODAYS,
       page: () => const TodaysView(),
       binding: TodaysBinding(),
+    ),
+    GetPage(
+      name: _Paths.EVENTS,
+      page: () => EventsView(),
+      binding: EventsBinding(),
     ),
   ];
 }

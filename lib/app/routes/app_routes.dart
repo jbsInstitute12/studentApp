@@ -13,6 +13,7 @@ abstract class Routes {
   static const ATTANDANCE = _Paths.ATTANDANCE;
   static const MANAGEMENT_MESSAGE = _Paths.MANAGEMENT_MESSAGE;
   static const TODAYS = _Paths.TODAYS;
+  static const EVENTS = _Paths.EVENTS;
 }
 
 abstract class _Paths {
@@ -22,4 +23,10 @@ abstract class _Paths {
   static const SIGNIN = '/signin';
   static const SIGNUP = '/signup';
   static const DASHBOARD = '/dashboard';
+  static const PROFILE = '/profile';
+  static const NOTIFICATION = '/notification';
+  static const ATTANDANCE = '/attandance';
+  static const MANAGEMENT_MESSAGE = '/managementMessage';
+  static const TODAYS = '/todays';
+  static const EVENTS = '/events';
 }
