@@ -278,6 +278,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.3.1"
+  flutter_folding_card:
+    dependency: "direct main"
+    description:
+      name: flutter_folding_card
+      sha256: "0133b559fbe35d2f1403d2535398b98f840a691835595edf01590a997779ad61"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
   flutter_gen_core:
     dependency: transitive
     description:
