@@ -22,4 +22,9 @@ abstract class _Paths {
   static const SIGNIN = '/signin';
   static const SIGNUP = '/signup';
   static const DASHBOARD = '/dashboard';
+  static const PROFILE = '/profile';
+  static const NOTIFICATION = '/notification';
+  static const ATTANDANCE = '/attandance';
+  static const MANAGEMENT_MESSAGE = '/management_message';
+  static const TODAYS = '/todays';
 }
