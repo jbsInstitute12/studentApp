@@ -22,6 +22,16 @@ class $AssetsGifGen {
   List<AssetGenImage> get values => [whatsapp, youtube];
 }
 
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// File path: assets/icons/pdf.png
+  AssetGenImage get pdf => const AssetGenImage('assets/icons/pdf.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [pdf];
+}
+
 class $AssetsIllustrationGen {
   const $AssetsIllustrationGen();
 
@@ -37,6 +47,7 @@ class Assets {
   Assets._();
 
   static const $AssetsGifGen gif = $AssetsGifGen();
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsIllustrationGen illustration = $AssetsIllustrationGen();
 }
 

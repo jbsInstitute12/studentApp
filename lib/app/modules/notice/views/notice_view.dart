@@ -20,7 +20,9 @@ class NoticeView extends GetView<NoticeController> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.back();
+              },
               icon: Icon(
                 Icons.keyboard_backspace_rounded,
                 color: Colors.black,
@@ -38,6 +40,7 @@ class NoticeView extends GetView<NoticeController> {
             children: [
               CommonCard(
                 name: noticeString.descrptionnotice,
+                
                 onPressed: () {
                   Get.to(descriptionnoticepage());
                 },

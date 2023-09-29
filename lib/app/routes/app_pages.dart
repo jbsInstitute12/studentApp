@@ -2,6 +2,12 @@ import 'package:get/get.dart';
 
 import '../modules/Profile/bindings/profile_binding.dart';
 import '../modules/Profile/views/profile_view.dart';
+import '../modules/activity/bindings/activity_binding.dart';
+import '../modules/activity/views/activity_view.dart';
+import '../modules/admission_inquiry/bindings/admission_inquiry_binding.dart';
+import '../modules/admission_inquiry/views/admission_inquiry_view.dart';
+import '../modules/assignment/bindings/assignment_binding.dart';
+import '../modules/assignment/views/assignment_view.dart';
 import '../modules/attandance/bindings/attandance_binding.dart';
 import '../modules/attandance/views/attandance_view.dart';
 import '../modules/dashboard/bindings/dashboard_binding.dart';
@@ -36,7 +42,8 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.EVENTS;
+  // static const INITIAL = Routes.EVENTS;
+  static const INITIAL = Routes.SPLASH;
 
   static final routes = [
     GetPage(
@@ -75,6 +82,16 @@ class AppPages {
     //   binding: NoticeBinding(),
     // ),
     GetPage(
+      name: _Paths.FACILITY,
+      page: () => const FacilityView(),
+      binding: FacilityBinding(),
+    ),
+    GetPage(
+      name: _Paths.NOTICE,
+      page: () => const NoticeView(),
+      binding: NoticeBinding(),
+    ),
+    GetPage(
       name: _Paths.PROFILE,
       page: () => const ProfileView(),
       binding: ProfileBinding(),
@@ -103,6 +120,21 @@ class AppPages {
       name: _Paths.EVENTS,
       page: () => EventsView(),
       binding: EventsBinding(),
+    ),
+    GetPage(
+      name: _Paths.ACTIVITY,
+      page: () => const ActivityView(),
+      binding: ActivityBinding(),
+    ),
+    GetPage(
+      name: _Paths.ADMISSION_INQUIRY,
+      page: () => const AdmissionInquiryView(),
+      binding: AdmissionInquiryBinding(),
+    ),
+    GetPage(
+      name: _Paths.ASSIGNMENT,
+      page: () => const AssignmentView(),
+      binding: AssignmentBinding(),
     ),
   ];
 }

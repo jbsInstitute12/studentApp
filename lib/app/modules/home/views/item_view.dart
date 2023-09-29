@@ -10,12 +10,19 @@ import 'package:studentapp/app/routes/app_pages.dart';
 class ItemView extends GetView<HomeController> {
   int index;
   int random;
-  ItemView({Key? ke, required this.index, required this.random});
+  String routeName;
+  ItemView(
+      {Key? ke,
+      required this.index,
+      required this.random,
+      required this.routeName});
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Get.toNamed(Routes.TODAYS,);
+        Get.toNamed(
+          routeName,
+        );
       },
       child: Padding(
         padding: const EdgeInsets.all(5.0),

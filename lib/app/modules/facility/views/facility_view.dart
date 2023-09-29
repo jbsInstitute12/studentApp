@@ -15,7 +15,7 @@ class FacilityView extends GetView<FacilityController> {
         appBar: AppBar(
           leading: IconButton(
               onPressed: () {
-                Get.context;
+                Get.back();
               },
               icon: Icon(
                 Icons.keyboard_backspace_rounded,
