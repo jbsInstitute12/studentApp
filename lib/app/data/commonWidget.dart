@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 import 'package:studentapp/app/data/appColors.dart';
 import 'package:studentapp/app/data/fontFamily.dart';
 
@@ -18,9 +19,8 @@ class commonWidget {
     );
   }
 
-
-
-  static getDrawerListTile({VoidCallback? callback, dynamic icon, required String title}) {
+  static getDrawerListTile(
+      {VoidCallback? callback, dynamic icon, required String title}) {
     return ListTile(
       onTap: () {
         callback?.call();
@@ -30,6 +30,21 @@ class commonWidget {
       leading: Icon(icon),
       title: Text(
         title,
+      ),
+    );
+  }
+
+  static getCommonTextWidgetForForm(
+      {String? title, double? leftPadding, TextStyle? style}) {
+    return Padding(
+      padding: EdgeInsets.only(left: 2.w),
+      child: Text(
+        title ?? "",
+        style: style ??
+            FontFamily.normalW600PopinsStyle.copyWith(
+                color: Colors.black,
+                fontWeight: FontWeight.w700,
+                fontSize: 12.sp),
       ),
     );
   }

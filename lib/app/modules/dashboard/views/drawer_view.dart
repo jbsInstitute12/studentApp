@@ -204,7 +204,9 @@ class DrawerView extends GetView<DashboardController> {
                   ),
                   commonWidget.getDrawerListTile(
                       title: AppStrings.parentinquiry,
-                      callback: () {},
+                      callback: () {
+                        Get.toNamed(Routes.ADMISSION_INQUIRY);
+                      },
                       icon: AppIcons.icinquiry),
                   SizedBox(
                     height: 1.h,

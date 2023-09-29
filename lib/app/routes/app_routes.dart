@@ -17,6 +17,7 @@ abstract class Routes {
   static const NOTICE = _Paths.NOTICE;
   static const ACTIVITY = _Paths.ACTIVITY;
   static const ADMISSION_INQUIRY = _Paths.ADMISSION_INQUIRY;
+  static const ASSIGNMENT = _Paths.ASSIGNMENT;
 }
 
 abstract class _Paths {
@@ -35,4 +36,5 @@ abstract class _Paths {
   static const NOTICE = '/notice';
   static const ACTIVITY = '/activity';
   static const ADMISSION_INQUIRY = '/admission-inquiry';
+  static const ASSIGNMENT = '/assignment';
 }

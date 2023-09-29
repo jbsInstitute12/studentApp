@@ -30,7 +30,7 @@ class HomeController extends GetxController {
     Routes.ACTIVITY,
     Routes.TODAYS,
     Routes.ADMISSION_INQUIRY,
-    Routes.TODAYS,
+    Routes.ASSIGNMENT,
     Routes.TODAYS,
     Routes.TODAYS,
     // Routes.eLibrary,

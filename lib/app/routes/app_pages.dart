@@ -6,6 +6,8 @@ import '../modules/activity/bindings/activity_binding.dart';
 import '../modules/activity/views/activity_view.dart';
 import '../modules/admission_inquiry/bindings/admission_inquiry_binding.dart';
 import '../modules/admission_inquiry/views/admission_inquiry_view.dart';
+import '../modules/assignment/bindings/assignment_binding.dart';
+import '../modules/assignment/views/assignment_view.dart';
 import '../modules/attandance/bindings/attandance_binding.dart';
 import '../modules/attandance/views/attandance_view.dart';
 import '../modules/dashboard/bindings/dashboard_binding.dart';
@@ -110,6 +112,11 @@ class AppPages {
       name: _Paths.ADMISSION_INQUIRY,
       page: () => const AdmissionInquiryView(),
       binding: AdmissionInquiryBinding(),
+    ),
+    GetPage(
+      name: _Paths.ASSIGNMENT,
+      page: () => const AssignmentView(),
+      binding: AssignmentBinding(),
     ),
   ];
 }

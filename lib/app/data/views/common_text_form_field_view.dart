@@ -15,6 +15,12 @@ class CommonTextFormFieldView extends GetView {
   Color? fillColors;
   bool? filled;
   IconData? prefix;
+  bool? readonly;
+  int? maxLines;
+  double? height;
+  TextInputType? inputType;
+  TextOverflow? overfloe;
+
   CommonTextFormFieldView(
       {Key? key,
       this.title,
@@ -24,6 +30,11 @@ class CommonTextFormFieldView extends GetView {
       this.filled,
       this.fillColors,
       this.prefix,
+      this.overfloe,
+      this.height,
+      this.maxLines,
+      this.readonly,
+      this.inputType,
       this.shadowWeight})
       : super(key: key);
   @override
@@ -34,12 +45,21 @@ class CommonTextFormFieldView extends GetView {
       child: TextFormField(
         controller: con ?? null,
         validator: validator,
+        readOnly: readonly ?? false,
+        maxLines: maxLines ?? null,
         cursorColor: Colors.red,
+        
+        keyboardType: inputType ?? null,
+      
         decoration: InputDecoration(
-            prefixIcon: Icon(prefix ?? Icons.person),
+        
+            contentPadding: EdgeInsets.only(left: 4.w),
+            // prefixIcon:Icon(),
+            prefixIcon: prefix != null ? Icon(prefix) : null,
             iconColor: Colors.grey,
             focusColor: AppColors.redColor,
             prefixIconColor: Colors.grey,
+
 
             // hoverColor: AppColors.redColor,
             enabledBorder: OutlineInputBorder(
