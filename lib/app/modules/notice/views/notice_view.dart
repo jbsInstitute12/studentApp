@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:studentapp/app/data/appColors.dart';
 import 'package:studentapp/app/data/appStrings.dart';
 import 'package:studentapp/app/data/commoncard.dart';
+import 'package:studentapp/app/modules/notice/views/audio_notice.dart';
 import 'package:studentapp/app/modules/notice/views/description_notice.dart';
 import 'package:studentapp/app/modules/notice/views/image_notice.dart';
 import 'package:studentapp/app/modules/notice/views/pdf_notice.dart';
@@ -59,7 +60,9 @@ class NoticeView extends GetView<NoticeController> {
               ),
               CommonCard(
                 name: noticeString.audionotice,
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(audionoticepage());
+                },
                 color: AppColors.mainHomeScreenColors[random4],
               ),
             ],
