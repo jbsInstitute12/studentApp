@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
+import 'package:studentapp/app/data/fontFamily.dart';
 
 class ProfileTextField extends StatelessWidget {
   const ProfileTextField({super.key, required this.name, required this.icon});
@@ -59,6 +60,7 @@ class ProfileSubTextField extends StatelessWidget {
               style: TextStyle(
                   color: Color.fromARGB(255, 11, 19, 63),
                   fontWeight: FontWeight.w500,
+                  fontFamily: FontFamily.popins,
                   fontSize: 12.sp),
             )
           ],

@@ -4,10 +4,11 @@ import 'package:studentapp/app/data/appColors.dart';
 import 'package:studentapp/app/data/fontFamily.dart';
 
 class commonWidget {
-  static getCommonAppBar(String? title, TextStyle? style, bool? centerTitle) {
+  static getCommonAppBar(String? title, TextStyle? style, bool? centerTitle,{List<Widget>? trailing} ) {
     return AppBar(
       backgroundColor: AppColors.redColor,
       centerTitle: centerTitle ?? false,
+      actions:trailing??null,
       title: Text(
         title ?? "ghvfh",
         style: style ??

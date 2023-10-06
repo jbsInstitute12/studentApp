@@ -34,7 +34,7 @@ class HomeController extends GetxController {
     Routes.TODAYS,
     Routes.TODAYS,
     // Routes.eLibrary,
-    Routes.TODAYS,
+    Routes.EVENTS,
     Routes.FACILITY,
     Routes.TODAYS,
     Routes.MANAGEMENT_MESSAGE,

@@ -16,10 +16,12 @@ class AdmissionInquiryView extends GetView<AdmissionInquiryController> {
     return Scaffold(
         appBar: commonWidget.getCommonAppBar(
             "Admission Inquiry",
+            
             TextStyle(
-                color: Colors.white,
-                fontFamily: FontFamily.popins,
-                fontWeight: FontWeight.w600),
+              color: Colors.white,
+              fontFamily: FontFamily.popins,
+              fontWeight: FontWeight.w600,
+            ),
             false),
         body: Stack(
           alignment: Alignment.bottomCenter,

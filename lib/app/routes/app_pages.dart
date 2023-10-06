@@ -133,7 +133,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.ASSIGNMENT,
-      page: () => const AssignmentView(),
+      page: () => AssignmentView(),
       binding: AssignmentBinding(),
     ),
   ];
